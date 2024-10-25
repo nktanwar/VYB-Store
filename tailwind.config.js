@@ -8,8 +8,18 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        'custom-green': '#00DC82', // Add your custom color
+        'custom-gradient': 'linear-gradient(to right, #FF5D5D, #4794FF)',
+      },
+      backgroundImage: {
+        'custom-gradient': 'linear-gradient(to right, #FF5D5D, #4794FF)',
+        'custom-green': '#00DC82', 
+      },
+      borderImage: {
+        'custom-gradient': 'linear-gradient(to right, #FF5D5D, #4794FF)',
+      },
+      fontFamily: {
+        urbanist: ['Urbanist', 'sans-serif'],
       },
     },
   },

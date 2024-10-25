@@ -1,16 +1,11 @@
-import localFont from "next/font/local";
 import "./globals.css";
-
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
-});
+import Navbar from "@/components/nav";
+import { Mid } from "@/components/mid";
+import Midbar from "@/components/midBar";
+import HowToStart from "@/components/start";
+import Influencers from "@/components/Influencers";
+import Faq from "@/components/faq";
+import Carousel from "@/components/Scrolldivs";
 
 export const metadata = {
   title: "Create Next App",
@@ -20,10 +15,43 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        <link
+          href="https://fonts.googleapis.com/css2?family=Urbanist:wght@100;400;700;900&display=swap"
+          rel="stylesheet"
+        />
+      </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className="font-urbanist antialiased min-h-screen"
+        style={{ backgroundColor: "#181818" }}
       >
-        {children}
+        <div className="min-h-screen">
+          {/* Navbar */}
+          <div>
+            <Navbar />
+          </div>
+
+          {/* Main content starts here */}
+          <div className="md:mt-6 md:ml-[120px] sm:ml-4">
+            <Mid />
+          </div>
+
+          <div className="md:mt-8 md:ml-[150px] sm:ml-4 min-h-screen">
+            <Midbar />
+          </div>
+
+          <div className="md:mt-8 sm:mx-4">
+            <Influencers />
+          </div>
+
+          <div className="mt-8 sm:mx-4">
+            <HowToStart />
+          </div>
+
+          <div className=" ">
+            <Faq />
+          </div>
+        </div>
       </body>
     </html>
   );
