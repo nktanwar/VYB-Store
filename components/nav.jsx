@@ -8,9 +8,9 @@ export default function Navbar() {
             <div className="flex items-center gap-2">
               
                 <div className=" md:ml-0">
-                    <Image src="/logo.png" alt="logo" className="w-28 md:w-auto"
-                    height={28}
-                    width={26} />
+                    <Image src="/logo.png" alt="logo" className="w-28 md:w-[150px] "
+                    height={180}
+                    width={185} />
                 </div>
 
                
@@ -20,7 +20,7 @@ export default function Navbar() {
             </div>
 
            
-            <div className="hidden md:flex gap-x-8 text-white font-semibold text-[27px] pt-3">
+            <div className="hidden md:flex gap-x-8 text-white font-semibold text-[27px] pt-7">
                 <div>For Creator</div>
                 <div>Merchandise</div>
                 <div>Brand</div>
