@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 
+
 const Faqdown = ({ques,ans}) => {
   const [isOpen, setIsOpen] = useState(false);
 

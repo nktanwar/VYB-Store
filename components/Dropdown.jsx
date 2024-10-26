@@ -1,5 +1,6 @@
 'use client';
 import { useState } from 'react';
+import Image from 'next/image';
 
 const DropdownButton = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -16,10 +17,13 @@ const DropdownButton = () => {
           className="inline-flex justify-center w-full rounded-md  shadow-sm px-4 py-2 bg-primary text-white hover:bg-primary-dark "
         >
          
-          <img
+          <Image
             src="/dropdown.svg" 
             alt="Dropdown Icon"
-            className="-mr-1  h-[41px] w-[100px]" 
+            className="-mr-1  h-[41px] w-[100px]"
+            height={41}
+            width={100} 
+
           />
         </button>
       </div>

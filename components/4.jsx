@@ -1,3 +1,6 @@
+import Image from "next/image";
+
+
 export default function Four() {
     return (
         <div className="flex flex-col items-center w-full max-w-[840px] h-auto bg-yellow-500 rounded-2xl">
@@ -11,10 +14,12 @@ export default function Four() {
             </div>
 
             <div className="flex flex-col items-center mt-2">
-                <img 
-                    src="assets/start/4.png" 
+                <Image 
+                    src="/assets/start/4.png" 
                     alt="Store Customization Illustration" 
                     className="h-auto max-h-[300px] w-full object-contain" 
+                    width={300}
+                    height={300}
                 />
             </div>
         </div>

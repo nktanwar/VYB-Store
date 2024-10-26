@@ -1,3 +1,4 @@
+import Image from "next/image";
 export default function Influencers() {
     return (
         <div className="p-4">
@@ -8,10 +9,12 @@ export default function Influencers() {
                 {/** Use an array to map through influencer images for cleaner code */}
                 {['1', '2', '3', '4'].map((num) => (
                     <div key={num} className="flex justify-center w-1/2 sm:w-1/4 md:w-1/5 p-2">
-                        <img
+                        <Image
                             src={`/assets/our influencers/${num}.png`}
                             alt={`Influencer ${num}`}
                             className="w-full h-auto rounded-full"
+                            width={100}
+                            height={200}
                         />
                     </div>
                 ))}

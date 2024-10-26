@@ -5,7 +5,7 @@ import Midbar from "@/components/midBar";
 import HowToStart from "@/components/start";
 import Influencers from "@/components/Influencers";
 import Faq from "@/components/faq";
-import Carousel from "@/components/Scrolldivs";
+
 
 export const metadata = {
   title: "Create Next App",
@@ -16,6 +16,8 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
+      <title>{metadata.title}</title>
+      <meta name="description" content={metadata.description} />
         <link
           href="https://fonts.googleapis.com/css2?family=Urbanist:wght@100;400;700;900&display=swap"
           rel="stylesheet"

@@ -48,7 +48,7 @@ export default function Carousel() {
       {/* Left Arrow Button */}
       <button
         onClick={prevSlide}
-        className="absolute left-4 top-1/2 transform -translate-y-1/2  rounded-full p-2 shadow-lg  transition"
+        className="absolute  left-1 md:left-24 top-1/2 transform -translate-y-1/2  rounded-full p-2 shadow-lg  transition"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -69,7 +69,7 @@ export default function Carousel() {
       {/* Right Arrow Button */}
       <button
         onClick={nextSlide}
-        className="absolute right-4 top-1/2 transform -translate-y-1/2  rounded-full p-2 shadow-lg  transition"
+        className="absolute right-1 md:right-24 top-1/2 transform -translate-y-1/2  rounded-full p-2 shadow-lg  transition"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"

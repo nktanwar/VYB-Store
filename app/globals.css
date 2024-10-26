@@ -6,3 +6,9 @@
 .font-urbanist {
     font-family: 'Urbanist', sans-serif;
   }
+
+  @layer base {
+    body {
+        @apply font-urbanist; 
+    }
+}

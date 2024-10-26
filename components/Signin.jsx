@@ -3,6 +3,7 @@
 import { useForm } from 'react-hook-form';
 import { z } from 'zod';
 import { zodResolver } from '@hookform/resolvers/zod';
+import Image from 'next/image';
 
 // Define the validation schema
 const schema = z.object({
@@ -23,10 +24,12 @@ export default function Signin() {
   return (
     <div 
       className="flex flex-col items-center justify-evenly h-[500px] md:w-[840px] md:h-[377px] md:flex-row md:justify-evenly md:items-center rounded-2xl" 
-      style={{ backgroundColor: '#A94949' }}  // Corrected to use quotes
+      style={{ backgroundColor: '#A94949' }}  
     >
       <div  >
-        <img src="text.png" alt="Logo" />
+        <Image src="/text.png" alt="Logo"
+        height={500}
+        width={500} />
       </div>
 
       <div className="bg-black md:w-[280px] md:h-[350px] rounded-2xl flex items-center flex-col text-white p-2 relative mt-6 ">
