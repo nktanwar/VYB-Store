@@ -13,7 +13,7 @@ pnpm dev
 # or
 bun dev
 ```
-
+Open https://vercel.com/api/toolbar/link/vyb-store-yj57.vercel.app?via=project-dashboard-alias-list&p=1&page=/ to see the results
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
